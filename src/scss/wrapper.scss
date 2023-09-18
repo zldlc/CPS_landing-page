@@ -1,0 +1,9 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    width: 94%;
+  }
+}

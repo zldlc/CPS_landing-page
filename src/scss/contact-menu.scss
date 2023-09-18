@@ -1,0 +1,20 @@
+.contacts-menu {
+  gap: 16px;
+
+  &__item {
+    align-items: center;
+  }
+
+  &--left {
+    display: none;
+    margin-right: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &--right {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.nav {
+  &__item {
+    white-space: nowrap;
+    padding: 8px 16px;
+
+    &--active {
+      border-radius: 6px;
+      border: 2px solid #b8ffec;
+      background-color: #fff;
+    }
+  }
+
+  &__link {
+    color: #7e7e82;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+}

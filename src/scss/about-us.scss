@@ -1,0 +1,63 @@
+.about-us {
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 94%;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1120px) {
+    margin: 0 auto;
+    width: 94%;
+    flex-direction: row;
+  }
+
+  &__text {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 8px;
+    max-height: 100px;
+    color: #1b1c21;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    @media (min-width: 768px) {
+      gap: 24px;
+      max-width: 85%;
+      margin-bottom: 16px;
+      line-height: 142%;
+    }
+
+    @media (min-width: 1120px) {
+      max-width: 90%;
+      margin-bottom: 16px;
+      line-height: 142%;
+    }
+  }
+
+  &__more-btn {
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 768px) {
+      border-radius: 8px;
+      width: 360px;
+      height: 208px;
+    }
+
+    @media (min-width: 1120px) {
+      border-radius: 8px;
+      width: 532px;
+      height: 308px;
+    }
+  }
+}

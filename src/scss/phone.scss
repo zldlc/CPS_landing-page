@@ -1,0 +1,11 @@
+.phone {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #7e7e82;
+  }
+}

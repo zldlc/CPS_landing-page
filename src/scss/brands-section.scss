@@ -1,0 +1,26 @@
+.brands-section {
+  &__swiper {
+    min-height: 110px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      padding: 0 24px;
+      max-height: 160px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 0 32px;
+      transition: max-height 0.5s ease-out;
+    }
+  }
+
+  &__more-btn {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

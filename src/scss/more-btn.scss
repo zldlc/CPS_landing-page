@@ -1,0 +1,19 @@
+.more-btn {
+  align-items: center;
+
+  svg {
+    transition: transform 0.3s ease-out;
+  }
+
+  &__text {
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+
+  &--top {
+    transform: rotate(180deg);
+  }
+}

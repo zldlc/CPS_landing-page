@@ -1,0 +1,31 @@
+.header {
+  height: 88px;
+  background-color: #fff;
+  margin-bottom: 24px;
+
+  @media (min-width: 1120px) {
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+  }
+
+  &__content {
+    align-items: center;
+
+    &--left {
+      gap: 16px;
+
+      @media (min-width: 768px) {
+        gap: 20px;
+      }
+    }
+  }
+}

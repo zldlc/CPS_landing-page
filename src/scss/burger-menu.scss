@@ -1,0 +1,99 @@
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  min-width: 320px;
+  padding: 24px 24px 32px;
+  background-color: #fff;
+  z-index: 2;
+  transition: left 0.3s ease-in-out;
+
+  @media (min-width: 768px) {
+    transition: left 0.5s ease-in-out;
+  }
+
+  @media (min-width: 1440px) {
+    position: static;
+    order: -1;
+    box-shadow: none;
+    display: block;
+    left: 0;
+  }
+
+  &__contacts-menu {
+    margin-bottom: 16px;
+  }
+
+  &__header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__content {
+    &--left {
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  &__nav {
+    padding-top: 4px;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 268px;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #7e7e82;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &--active {
+      color: #7e7e82;
+    }
+  }
+
+  &__footer {
+    flex-direction: column;
+  }
+
+  &__email {
+    margin-bottom: 12px;
+  }
+
+  &__phone {
+    margin-bottom: 40px;
+  }
+
+  &__highlight {
+    height: 32px;
+    left: 0;
+  }
+
+  &--open {
+    left: 0;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+}

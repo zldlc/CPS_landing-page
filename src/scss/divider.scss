@@ -1,0 +1,14 @@
+.divider {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+
+  &--right {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+}
