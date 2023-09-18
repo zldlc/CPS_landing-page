@@ -6,36 +6,36 @@
   }
 
   &__svg {
-    fill: #ff3e79;
+    fill: $color-main-pink;
     transition: fill 0.2s ease-in-out;
 
     &:hover {
-      fill: #ff6191;
+      fill: $color-hover-pink;
     }
   }
 
   &--stroke {
-    stroke: #ff3e79;
+    stroke: $color-main-pink;
     fill: none;
-    transition: fill 0.1s ease-in-out, stroke 0.1s ease-in-out;
+    transition: fill 0.3s ease-in-out, stroke 0.1s ease-in-out;
 
     &:hover {
       stroke: transparent;
-      fill: #ff3e79;
+      fill: $color-main-pink;
 
       path {
-        fill: #fff;
+        fill: $color-white;
       }
     }
 
     path {
-      fill: #ff3e79;
+      fill: $color-main-pink;
       transition: fill 0.1s ease-in-out, stroke 0.1s ease-in-out;
     }
   }
 
   &--close {
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-laptop) {
       display: none;
     }
   }

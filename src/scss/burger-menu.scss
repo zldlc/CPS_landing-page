@@ -1,18 +1,25 @@
 .burger-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   min-width: 320px;
-  padding: 24px 24px 32px;
-  background-color: #fff;
+  padding: 16px 16px 32px;
+  background-color: $color-white;
   z-index: 2;
   transition: left 0.3s ease-in-out;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-mobile-M) {
+    min-width: 360px;
+    padding: 16px 24px 32px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    padding: 24px 24px 32px;
     transition: left 0.5s ease-in-out;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-laptop) {
+    padding: 30px 30px 30px 22px;
     position: static;
     order: -1;
     box-shadow: none;
@@ -29,7 +36,7 @@
     align-items: center;
     margin-bottom: 22px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-bottom: 46px;
     }
   }
@@ -45,8 +52,12 @@
     padding-top: 4px;
     margin-bottom: 32px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-bottom: 268px;
+    }
+
+    @media (min-width: $screen-laptop) {
+      margin-bottom: 240px;
     }
   }
 
@@ -58,19 +69,23 @@
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: #7e7e82;
+      color: $text-color-main-grey;
     }
 
     &:not(:last-child) {
       margin-bottom: 24px;
 
-      @media (min-width: 768px) {
+      @media (min-width: $screen-tablet) {
         margin-bottom: 32px;
+      }
+
+      @media (min-width: $screen-laptop) {
+        margin-bottom: 28px;
       }
     }
 
     &--active {
-      color: #7e7e82;
+      color: $text-color-main-grey;
     }
   }
 
@@ -83,7 +98,11 @@
   }
 
   &__phone {
-    margin-bottom: 40px;
+    margin-bottom: 8px;
+
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__highlight {
@@ -92,8 +111,19 @@
   }
 
   &--open {
+    height: 100%;
     left: 0;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
       -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      height: auto;
+    }
+
+    @media (min-width: $screen-laptop) {
+      position: static;
+      box-shadow: none;
+    }
   }
 }

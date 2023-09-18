@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 16,
     slidesPerView: 1.3,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.brands-section__swiper-pagination',
       clickable: true
     },
     breakpoints: {
@@ -46,6 +46,38 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       700: {
         slidesPerView: 3
+      }
+    }
+  })
+
+  resizableSwiper('(max-width: 767px)', '.slider-2  ', {
+    spaceBetween: 16,
+    slidesPerView: 1.3,
+    pagination: {
+      el: '.repair-section__swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      340: {
+        slidesPerView: 1.3
+      },
+      360: {
+        slidesPerView: 1.5
+      },
+      450: {
+        slidesPerView: 2
+      },
+      550: {
+        slidesPerView: 2.3
+      },
+      650: {
+        slidesPerView: 2.8
+      },
+      700: {
+        slidesPerView: 3
+      },
+      1000: {
+        slidesPerView: 4
       }
     }
   })

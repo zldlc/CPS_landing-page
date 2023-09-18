@@ -2,12 +2,12 @@
   width: 2px;
   height: 32px;
   border-radius: 1px;
-  background-color: #eaeaea;
+  background-color: $color-stroke-grey;
 
   &--right {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       display: inline;
     }
   }

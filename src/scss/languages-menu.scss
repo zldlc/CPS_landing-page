@@ -10,11 +10,11 @@
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: #7e7e82;
+      color: $text-color-main-grey;
     }
 
     &--active {
-      color: #7e7e82;
+      color: $text-color-main-grey;
     }
   }
 }

@@ -1,7 +1,7 @@
 .main-section {
   margin-bottom: 24px;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-laptop) {
     margin-bottom: 50px;
   }
 
@@ -11,12 +11,12 @@
     margin-bottom: 24px;
     justify-content: space-between;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-left: 24px;
       margin-bottom: 32px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-laptop) {
       margin-left: 32px;
       margin-bottom: 8px;
     }
@@ -28,7 +28,7 @@
   }
 
   &__title {
-    color: #1b1c21;
+    color: $text-color-main-black;
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
@@ -38,7 +38,7 @@
   &__contacts-menu {
     display: none;
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-laptop) {
       display: flex;
       gap: 32px;
     }
@@ -53,13 +53,12 @@
     margin-bottom: 24px;
     padding: 0 16px;
     overflow-x: scroll;
-
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       padding: 0 24px;
       margin-bottom: 32px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-laptop) {
       flex-wrap: wrap;
       margin-bottom: 24px;
       padding: 0 32px;

@@ -1,9 +1,9 @@
 .header {
   height: 88px;
-  background-color: #fff;
+  background-color: $color-white;
   margin-bottom: 24px;
 
-  @media (min-width: 1120px) {
+  @media (min-width: $screen-laptop) {
     height: 1px;
     width: 1px;
     margin: -1px;
@@ -23,7 +23,7 @@
     &--left {
       gap: 16px;
 
-      @media (min-width: 768px) {
+      @media (min-width: $screen-tablet) {
         gap: 20px;
       }
     }

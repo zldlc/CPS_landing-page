@@ -1,5 +1,5 @@
 .sections-wrapper {
-  @media (min-width: 1120px) {
+  @media (min-width: $screen-laptop) {
     margin-top: 42px;
   }
 }

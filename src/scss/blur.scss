@@ -1,15 +1,16 @@
 .blur {
-  @media (min-width: 361px) and (max-width: 1439px) {
-    position: absolute;
+  @media (max-width: 1439px) {
+    position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: $color-white;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
     z-index: -1;
+    transition: opacity 0.5s ease-in-out, z-index 0.3s ease-in-out;
   }
 
   &--active {
+    height: 100%;
     opacity: 0.9;
     z-index: 2;
   }

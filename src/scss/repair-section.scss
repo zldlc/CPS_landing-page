@@ -1,0 +1,22 @@
+.repair-section {
+  &__content-card {
+    padding: 16px;
+    border: 1px solid $color-stroke-grey;
+  }
+
+  &__swiper-slide {
+    height: 160px;
+  }
+
+  &__circle-btn {
+    align-self: flex-end;
+  }
+
+  &__swiper {
+    min-height: 200px;
+  }
+
+  &__swiper-wrapper {
+    padding: 0 16px;
+  }
+}

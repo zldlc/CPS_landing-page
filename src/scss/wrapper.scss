@@ -3,7 +3,7 @@
   margin: 0 auto;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-tablet) {
     width: 94%;
   }
 }

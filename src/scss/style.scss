@@ -1,5 +1,7 @@
 // Подключения
 
+@import './color-variables.scss';
+@import './screen-variables.scss';
 @import './font-face.scss';
 @import './reset.scss';
 @import './wrapper.scss';
@@ -25,15 +27,17 @@
 @import './languages-menu.scss';
 @import './sections-wrapper.scss';
 @import './blur.scss';
+@import './content-card.scss';
+@import './repair-section.scss';
 
 // Базовые свойства
-
 html {
   font-family: 'TTLakes', Helvetica, sans-serif;
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: $color-main-background;
+  color: $text-color-main-black;
 }
 
 // Вспомогательные классы

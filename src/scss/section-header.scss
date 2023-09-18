@@ -1,11 +1,11 @@
 .section-header {
-  background-image: linear-gradient(to right, #f8f8f8, #fff);
+  background-image: linear-gradient(to right, #f8f8f8, $color-white);
   width: 100%;
-  border-top: 1px solid #d9fff5;
+  border-top: 1px solid $color-stroke-turquoise;
   padding: 16px 0;
   margin-bottom: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-tablet) {
     margin-bottom: 24px;
   }
 }

@@ -5,13 +5,13 @@
 
     &--active {
       border-radius: 6px;
-      border: 2px solid #b8ffec;
-      background-color: #fff;
+      border: 2px solid $color-stroke-turquoise;
+      background-color: $color-white;
     }
   }
 
   &__link {
-    color: #7e7e82;
+    color: $text-color-main-grey;
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;

@@ -1,13 +1,13 @@
 .about-us {
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-tablet) {
     margin: 0 auto;
     width: 94%;
     flex-direction: row;
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: $screen-laptop) {
     margin: 0 auto;
     width: 94%;
     flex-direction: row;
@@ -18,7 +18,6 @@
     gap: 10px;
     margin-bottom: 8px;
     max-height: 100px;
-    color: #1b1c21;
     font-size: 14px;
     font-weight: 400;
     line-height: 128%;
@@ -26,14 +25,14 @@
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       gap: 24px;
       max-width: 85%;
       margin-bottom: 16px;
       line-height: 142%;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-laptop) {
       max-width: 90%;
       margin-bottom: 16px;
       line-height: 142%;
@@ -48,13 +47,13 @@
     width: 100%;
     height: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       border-radius: 8px;
       width: 360px;
       height: 208px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-laptop) {
       border-radius: 8px;
       width: 532px;
       height: 308px;

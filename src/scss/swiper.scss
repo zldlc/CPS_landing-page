@@ -1,26 +1,9 @@
 .swiper {
   width: 100%;
-
-  &__content-card {
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 16px 20px;
-    background-color: #fff;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-  }
 }
 
 .swiper-wrapper {
-  margin: 0 16px;
   box-sizing: border-box;
-}
-
-.swiper-slide {
-  width: 240px;
-  height: 72px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -33,15 +16,15 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #ddd;
+  background-color: $color-light-grey;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #b5b6bc;
+  background-color: $color-dark-grey;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-tablet) {
   .swiper-wrapper {
     margin: 0;
     gap: 16px 24px;
@@ -57,7 +40,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $screen-laptop) {
   .swiper-slide {
     width: calc((100% - (3 * 32px)) / 4);
   }
