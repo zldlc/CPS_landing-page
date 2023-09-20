@@ -213,9 +213,11 @@ video {
       .divider--right {
         display: inline; } }
 
-@media (min-width: 1440px) {
-  .main {
-    display: flex; } }
+.main {
+  min-height: 100%; }
+  @media (min-width: 1440px) {
+    .main {
+      display: flex; } }
 
 .main-section {
   margin-bottom: 24px; }
@@ -473,6 +475,7 @@ video {
 
 .burger-menu {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: -100%;
   min-width: 320px;
@@ -553,12 +556,12 @@ video {
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); }
     @media (min-width: 768px) {
       .burger-menu--open {
-        position: absolute;
-        height: auto; } }
+        position: fixed; } }
     @media (min-width: 1440px) {
       .burger-menu--open {
         position: static;
-        box-shadow: none; } }
+        box-shadow: none;
+        overflow-y: visible; } }
 
 .languages-menu {
   gap: 7px; }
