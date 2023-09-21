@@ -1,4 +1,6 @@
 .main {
+  min-height: 100%;
+
   @media (min-width: $screen-laptop) {
     display: flex;
   }

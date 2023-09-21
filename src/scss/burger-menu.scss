@@ -1,5 +1,6 @@
 .burger-menu {
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: -100%;
   min-width: 320px;
@@ -117,8 +118,7 @@
       -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
     @media (min-width: $screen-tablet) {
-      position: absolute;
-      height: auto;
+      position: fixed;
     }
 
     @media (min-width: $screen-laptop) {

@@ -37,6 +37,14 @@
 
   &__swiper-wrapper {
     padding: 0 16px;
+
+    @media (min-width: $screen-tablet) {
+      padding: 0 24px;
+    }
+
+    @media (min-width: $screen-laptop) {
+      padding: 0 32px;
+    }
   }
 
   &__more-btn {

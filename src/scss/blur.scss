@@ -1,5 +1,5 @@
 .blur {
-  @media (max-width: 1439px) {
+  @media (max-width: $screen-laptop) {
     position: fixed;
     width: 100%;
     height: 100%;

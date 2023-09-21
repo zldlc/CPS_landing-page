@@ -75,9 +75,35 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       700: {
         slidesPerView: 3
+      }
+    }
+  })
+
+  resizableSwiper('(max-width: 767px)', '.slider-3  ', {
+    spaceBetween: 16,
+    slidesPerView: 1.3,
+    pagination: {
+      el: '.price-section__swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      340: {
+        slidesPerView: 1.2
       },
-      1000: {
-        slidesPerView: 4
+      360: {
+        slidesPerView: 1.3
+      },
+      450: {
+        slidesPerView: 1.8
+      },
+      550: {
+        slidesPerView: 2.3
+      },
+      650: {
+        slidesPerView: 2.5
+      },
+      700: {
+        slidesPerView: 2.8
       }
     }
   })

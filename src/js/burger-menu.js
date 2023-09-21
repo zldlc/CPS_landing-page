@@ -7,9 +7,17 @@ const body = document.querySelector('body')
 burgerMenuOpenBtn.addEventListener('click', () => {
   burgerMenu.classList.add('burger-menu--open')
   whiteBlur.classList.add('blur--active')
+  body.classList.add('unscroll-laptop')
 })
 
 burgerMenuCloseBtn.addEventListener('click', () => {
   burgerMenu.classList.remove('burger-menu--open')
   whiteBlur.classList.remove('blur--active')
+  body.classList.remove('unscroll-laptop')
+})
+
+whiteBlur.addEventListener('click', () => {
+  burgerMenu.classList.remove('burger-menu--open')
+  whiteBlur.classList.remove('blur--active')
+  body.classList.remove('unscroll-laptop')
 })

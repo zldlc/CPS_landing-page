@@ -29,8 +29,10 @@
 @import './blur.scss';
 @import './content-card.scss';
 @import './repair-section.scss';
+@import './price-section.scss';
 
 // Базовые свойства
+
 html {
   font-family: 'TTLakes', Helvetica, sans-serif;
 }
@@ -44,4 +46,10 @@ body {
 
 .flex {
   display: flex;
+}
+
+.unscroll-laptop {
+  @media (max-width: $screen-laptop) {
+    overflow: hidden;
+  }
 }
