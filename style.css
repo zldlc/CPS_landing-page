@@ -137,9 +137,6 @@ video {
   @media (min-width: 768px) {
     .wrapper {
       width: 94%; } }
-  @media (min-width: 1440px) {
-    .wrapper {
-      width: 96%; } }
 
 .header {
   height: 88px;
@@ -647,7 +644,13 @@ video {
         display: flex; } }
 
 .price-section {
-  margin-bottom: 24px; }
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .price-section {
+      margin-bottom: 48px; } }
+  @media (min-width: 768px) {
+    .price-section {
+      margin-bottom: 50px; } }
   .price-section__content-card {
     position: relative;
     flex-direction: column;
@@ -658,7 +661,15 @@ video {
         align-items: center;
         flex-direction: row;
         width: 100%;
-        border-radius: 0; } }
+        border-radius: 0; }
+        .price-section__content-card::after {
+          content: '';
+          position: absolute;
+          bottom: 64px;
+          left: 2%;
+          width: 96%;
+          height: 1px;
+          background-color: #eaeaea; } }
     .price-section__content-card--first {
       border-radius: 6px 6px 0 0; }
     .price-section__content-card--last {
@@ -674,7 +685,11 @@ video {
     margin-bottom: 16px; }
     @media (min-width: 768px) {
       .price-section__swiper {
-        height: auto; } }
+        height: auto;
+        margin-bottom: 24px; } }
+    @media (min-width: 1440px) {
+      .price-section__swiper {
+        margin-bottom: 32px; } }
   .price-section__swiper-wrapper {
     padding: 0 8px; }
     @media (min-width: 768px) {
@@ -684,6 +699,13 @@ video {
     @media (min-width: 1440px) {
       .price-section__swiper-wrapper {
         padding: 0 32px; } }
+  .price-section__services-title {
+    display: none;
+    padding: 0 16px;
+    margin-bottom: 16px; }
+    @media (min-width: 768px) {
+      .price-section__services-title {
+        display: flex; } }
   .price-section__service-title {
     display: block;
     margin-bottom: 4px;
@@ -694,7 +716,18 @@ video {
     opacity: 0.72; }
     @media (min-width: 768px) {
       .price-section__service-title {
-        display: none; } }
+        display: none; }
+        .price-section__service-title--header {
+          display: flex; }
+          .price-section__service-title--header:first-child {
+            margin-right: 35%; }
+          .price-section__service-title--header:nth-child(2) {
+            flex: 1 1 auto; }
+          .price-section__service-title--header:last-child {
+            width: 31%; } }
+    @media (min-width: 1440px) {
+      .price-section__service-title--header:last-child {
+        width: 33%; } }
   .price-section__service-text {
     display: block;
     font-size: 14px;
@@ -732,6 +765,27 @@ video {
     min-height: 9px; }
   .price-section__section-header {
     margin-bottom: 30px; }
+  .price-section__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 18px;
+    max-width: 420px; }
+  .price-section__special {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px; }
+    .price-section__special::after {
+      content: '';
+      position: absolute;
+      background-image: url(./static/price-section-special-arrow.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 24px;
+      height: 27px; }
 
 html {
   font-family: 'TTLakes', Helvetica, sans-serif; }
