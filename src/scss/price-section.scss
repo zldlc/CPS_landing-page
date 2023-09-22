@@ -111,15 +111,7 @@
         }
 
         &:last-child {
-          width: 31%;
-        }
-      }
-    }
-
-    @media (min-width: $screen-laptop) {
-      &--header {
-        &:last-child {
-          width: 33%;
+          width: 32%;
         }
       }
     }
