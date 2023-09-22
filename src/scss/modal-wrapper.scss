@@ -1,0 +1,19 @@
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  width: 514px;
+  top: 0;
+  right: 0;
+  padding-top: 32px;
+  height: 72px;
+  z-index: -1;
+  transition: z-index 0.1s ease-in-out;
+
+  @media (min-width: $screen-laptop) {
+    display: block;
+
+    &--visible {
+      z-index: 3;
+    }
+  }
+}

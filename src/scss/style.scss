@@ -29,7 +29,12 @@
 @import './blur.scss';
 @import './content-card.scss';
 @import './repair-section.scss';
+@import './btn.scss';
 @import './price-section.scss';
+@import './footer.scss';
+@import './modal-page.scss';
+@import './modal-wrapper.scss';
+@import './offer.scss';
 
 // Базовые свойства
 
@@ -49,7 +54,5 @@ body {
 }
 
 .unscroll-laptop {
-  @media (max-width: $screen-laptop) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }

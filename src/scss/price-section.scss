@@ -136,35 +136,15 @@
 
   &__btn {
     position: absolute;
-    display: flex;
-    align-items: center;
     bottom: 16px;
     right: 16px;
     max-width: 120px;
-    height: 32px;
-    padding: 4px 40px 4px 12px;
-    background-color: $color-main-pink;
-    border-radius: 16px;
-    color: $color-white;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 200%;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
 
     @media (min-width: $screen-tablet) {
       position: relative;
       bottom: 0;
       right: 0;
     }
-  }
-
-  &__btn-arrow {
-    position: absolute;
-    right: 18px;
-    min-width: 7px;
-    min-height: 9px;
   }
 
   &__section-header {
