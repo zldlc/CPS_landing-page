@@ -684,7 +684,8 @@ video {
     position: relative;
     flex-direction: column;
     padding: 16px;
-    gap: 16px; }
+    gap: 16px;
+    border-radius: 6px; }
     @media (min-width: 768px) {
       .price-section__content-card {
         align-items: center;
@@ -699,10 +700,12 @@ video {
           width: 96%;
           height: 1px;
           background-color: #eaeaea; } }
-    .price-section__content-card--first {
-      border-radius: 6px 6px 0 0; }
-    .price-section__content-card--last {
-      border-radius: 0 0 6px 6px; }
+    @media (min-width: 768px) {
+      .price-section__content-card--first {
+        border-radius: 6px 6px 0 0; } }
+    @media (min-width: 768px) {
+      .price-section__content-card--last {
+        border-radius: 0 0 6px 6px; } }
   .price-section__swiper-slide {
     height: 200px; }
     @media (min-width: 768px) {
